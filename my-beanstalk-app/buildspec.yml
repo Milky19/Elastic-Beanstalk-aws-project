@@ -2,10 +2,11 @@ version: 0.2
 
 phases:
   install:
+    runtime-versions:
+      nodejs: 20
     commands:
-      - echo "Starting installation"
-      - cd my-beanstalk-app
       - echo "Installing Node.js dependencies"
+      - cd my-beanstalk-app
       - npm install
 
   build:
